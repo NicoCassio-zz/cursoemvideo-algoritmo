@@ -4,16 +4,7 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro i = 1, n
-
-		escreva("Tabuada: ")
-		leia(n)
 		
-		faca
-		{
-			escreva(n, " x ", i, " = ", n*i, "\n")
-			i++
-		} enquanto(i <= 10)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -21,7 +12,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 166; 
+ * @POSICAO-CURSOR = 71; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
