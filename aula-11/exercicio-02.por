@@ -4,23 +4,34 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro i, t = 0, n, s = 0
-		
-		para(i = 0; i < 6; i++)
+		inteiro i, s = 0, d5 = 0, n, nu = 0, sp =0 
+		real m
+
+		para(i = 0; i <5; i++)
 		{
 			escreva("Número: ")
 			leia(n)
-			se((n >= 0) e (n <= 10))
+			s += n
+			se(n % 5 == 0)
 			{
-				t++
-				se(n % 2 != 0)
-				{
-					s += n
-				}
+				d5++
+			}
+			se(n == 0)
+			{
+				nu++
+			}
+			se(n % 2 == 0)
+			{
+				sp += n
 			}
 		}
-		escreva("Foram digitados ", t, " números entre 0 e 10\n")
-		escreva("A soma de todos os ímpares é ", s)
+		m = s / 5
+
+		limpa()
+		escreva("A soma de todos os números é ", s)
+		escreva("\nA média entre eles é ", m)
+		escreva("\nDentre eles, ", d5, " são divisíveis por 5 e ", nu, " são nulos")
+		escreva("\nE a soma dos pares é ", sp)
 		
 	}
 } 
@@ -29,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 248; 
+ * @POSICAO-CURSOR = 513; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
