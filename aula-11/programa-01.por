@@ -4,30 +4,25 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro i = 0, n, neg = 0
-
-		faca
+		inteiro n, s = 0, i
+		
+		para(i = 0; i < 5; i++)
 		{
-			limpa()
-			escreva("Digite um número: ")
+			escreva("Número: ")
 			leia(n)
-			se(n < 0)
-			{
-				neg++
-			}
-			i++
-		} enquanto(i < 5)
+			s += n
+		}
 
-		limpa()
-		escreva("Dos números digitados, ", neg, " são negativos")
+		escreva("A soma de todos os valores é ", s)
+		
 	}
-}
+} 
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 294; 
+ * @POSICAO-CURSOR = 87; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

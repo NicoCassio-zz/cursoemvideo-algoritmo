@@ -4,22 +4,27 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro i = 0, n, neg = 0
+		inteiro n, f
+		caracter op
 
 		faca
 		{
 			limpa()
-			escreva("Digite um número: ")
+			f = 1
+			escreva("Número: ")
 			leia(n)
-			se(n < 0)
+	
+			escreva("O fatorial de ", n)
+			faca
 			{
-				neg++
-			}
-			i++
-		} enquanto(i < 5)
-
-		limpa()
-		escreva("Dos números digitados, ", neg, " são negativos")
+				f *= n
+				n--
+			} enquanto(n > 1)
+	
+			escreva(" é ", f)
+			escreva("\nQuer continuar? [s/n] ")
+			leia(op)
+		} enquanto(op == 's')
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 294; 
+ * @POSICAO-CURSOR = 83; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

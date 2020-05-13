@@ -4,22 +4,27 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro i = 0, n, neg = 0
+		inteiro n, i = 1, d = 0
+		
+		escreva("Número: ")
+		leia(n)
 
 		faca
 		{
-			limpa()
-			escreva("Digite um número: ")
-			leia(n)
-			se(n < 0)
+			se(n % i == 0)
 			{
-				neg++
+				d++
 			}
 			i++
-		} enquanto(i < 5)
-
-		limpa()
-		escreva("Dos números digitados, ", neg, " são negativos")
+		} enquanto(i < n)
+		se(d == 1)
+		{
+			escreva("O número ", n, " é primo")
+		}
+		senao
+		{
+			escreva("O número ", n, " não é primo")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 294; 
+ * @POSICAO-CURSOR = 214; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
