@@ -5,33 +5,36 @@ programa
 
 	funcao inicio()
 	{
-		inteiro n[4], i, j, a
+		cadeia t[3]
+		inteiro i, j
 
-		para(i = 0; i < 4; i++)
-		{
-			limpa()
-			escreva(i + 1, "º número: ")
-			leia(n[i])
-		}
-
+		topo()
 		para(i = 0; i < 3; i++)
 		{
-			para(j = i + 1; j < 4; j++)
+			escreva(" Time ", i + 1, ": ")
+			leia(t[i])
+		}
+
+		limpa()
+		topo()
+		para(i = 0; i < 3; i++)
+		{
+			para(j = 0; j < 3; j++)
 			{
-				se(n[i] > n[j])
+				se(i != j)
 				{
-					a = n[i]
-					n[i] = n[j]
-					n[j] = a
+					escreva(t[i], " x ", t[j], "\n")
 				}
 			}
 		}
-
-		para(i = 0; i < 4; i++)
-		{
-			escreva("[", n[i], "]")
-		}
 		
+	}
+
+	funcao topo()
+	{
+		escreva("-------------------------------------\n")
+		escreva("  T O R N E I O  D E  F U T E B O L  \n")
+		escreva("-------------------------------------\n")
 	}
 
 } 
@@ -40,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 264; 
+ * @POSICAO-CURSOR = 195; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
